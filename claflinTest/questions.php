@@ -14,7 +14,7 @@
        		$radio = "";
 	    	$radio .= "<div class=\"radio\">";
 	  		$radio  .=	"<label>";
-	    	$radio .= "	<input type=\"radio\" name=\"question$i\"  value=\"$option\">";
+	    	$radio .= "	<input type=\"radio\" name=\"question$i\"  value=\"$option\" required>";
 	    	$radio .= "$option";
 	  		$radio .= "</label>";
 			$radio .= "</div>";

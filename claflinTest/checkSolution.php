@@ -1,3 +1,8 @@
+<?php if ($_SERVER['REQUEST_METHOD'] != 'POST')
+	$url = "index.php";
+	header('Location: '.$url);
+?>
+
 <?php $head = "Test results"; ?>
 <?php include "head.php"; ?>
 <header>
@@ -40,7 +45,13 @@
 
 	<div class="container result">
 	<div class="jumbotron">
-	<?php echo "<h2>".$totalCorrect . " correct answers</h2>". "<hr/>". "<h2>".count($answers)." total</h2>"; ?>
+	<?php 
+		$corr = "";
+		if ($totalCorrect <= 1)
+			$corr = "correct answer";
+		else
+			$corr = "correct answers";
+		echo "<h2>".$totalCorrect . " $corr</h2>". "<hr/>". "<h2>".count($answers)." total</h2>"; ?>
 	</div>
 
 	<?php
@@ -88,7 +99,7 @@
 		</div>
 	<?php } ?>
 
-
+	<a href="index.php"><button type="button" class="btn btn-primary btn-lg btn-block">Take quiz again!</button></a>
 
 
 <?php include "foot.php" ?>
