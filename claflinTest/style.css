@@ -1,0 +1,49 @@
+
+
+ 		body{
+  			margin: 0px;
+  			padding: 0px;
+  			margin-left: auto;
+  			margin-right: auto;
+  		}
+
+  		.jumbotron{
+  			padding: 30px;
+  		}
+
+  		.btn-block{
+  			width: 50%;
+  			margin-right: auto;
+  			margin-left: auto;
+  		}
+
+  		header{
+  			margin: 0px;
+  			padding-top: 30px;
+  			text-align: center;
+  			background-color: black;
+  			height: 90px;
+
+  		}
+  		header h1{
+  			color: #eee;
+  			margin: 0px;
+
+  		}
+
+      .result{
+        padding-top: 30px;
+        text-align: center;
+      }
+
+  		.questions{
+  			padding: 40px;
+  			padding-top: 10px;
+  		}
+
+      hr{
+        height: 7px;
+        color: white;
+        border-color: black;
+        background-color: black;
+      }
